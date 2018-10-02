@@ -1,0 +1,13 @@
+RESULT: UNSAFE
+ test.hs:7:1-7: Error: Liquid Type Mismatch
+ 
+ 7 | notEven = 8 
+     ^^^^^^^
+ 
+   Inferred type
+     VV : {VV : GHC.Types.Int | VV == (8 : int)}
+  
+   not a subtype of Required type
+     VV : {VV : GHC.Types.Int | VV mod 2 == 1}
+  
+   In Context

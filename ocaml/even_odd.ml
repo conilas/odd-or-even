@@ -10,4 +10,3 @@ is_odd 2;
 is_odd 3;
 is_odd 4;
 is_odd 5;
-

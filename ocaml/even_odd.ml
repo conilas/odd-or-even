@@ -1,8 +1,8 @@
 
 let is_odd number = 
   match number with 
-    | _ when number mod 2 = 0 -> print_endline "hey, odd!"
-    | _ when number mod 2 > 0 -> print_endline "hey, even!"
+    | _ when number mod 2 = 0 -> print_endline "hey, even!"
+    | _ when number mod 2 > 0 -> print_endline "hey, odd!"
     | _ -> print_endline "wut"
 ;;
 

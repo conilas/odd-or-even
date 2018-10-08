@@ -24,7 +24,7 @@
 (define (push-stack! arg)
   (set! stack (cons arg stack)))
 
-(define (is_odd arg)
+(define (is_even arg)
   (define result (equal? 0 (remainder arg 2)))
     result)
 
@@ -36,7 +36,7 @@
     [(or (equal? * arg) (equal? + arg))
      (define op-result (arg (pop-stack!) (pop-stack!)))
      (not (equal? arg "!")) (push-stack! op-result)
-     (equal? arg "!") (display "is_odd:") (display (is_odd op-result)) (format "~o" op-result)]
+     (equal? arg "!") (display "is_even:") (display (is_even op-result)) (format "~o" op-result)]
     ))
 (provide handle)
 
